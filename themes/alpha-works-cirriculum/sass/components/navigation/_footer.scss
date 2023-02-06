@@ -1,0 +1,52 @@
+
+footer {
+    height: auto;
+    padding: 20px 0;
+
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 300;
+      padding: 20px;
+
+      a {
+        text-decoration: none;
+        color: #000 !important;
+        font-weight: 300;
+        &:hover{
+          color: #ff1493;
+        }
+        &:active{
+          color: #1e90ff;
+        }
+      }
+  
+      a:visited {
+        color: #1e90ff;
+      }
+    }
+
+  }
+  .footerBox{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-weight: 300;
+
+    }
+  }
+}

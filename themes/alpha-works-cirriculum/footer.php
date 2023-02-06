@@ -12,19 +12,20 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'alpha-works-cirriculum' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'alpha-works-cirriculum' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'alpha-works-cirriculum' ), 'alpha-works-cirriculum', '<a href="http://neptalimontez.com">Neptali Montez</a>' );
-				?>
-		</div><!-- .site-info -->
+
+	<?php
+		wp_nav_menu(array(
+		'menu' => 'Nav Menu',
+		'theme_location' => 'footer-menu',
+		'menu_class' => 'footer-menu',
+		'menu_id' => 'footer-id'
+		))
+	?>
+
+	<div class="footerBox">
+		<p>&copy; Bitwise Workforce Training</p>
+	</div>
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

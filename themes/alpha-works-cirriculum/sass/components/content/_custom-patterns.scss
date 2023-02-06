@@ -1,0 +1,27 @@
+.entry-title {
+    display: none;
+}
+.weeks-columns-container{
+    padding: 0 250px;
+    .weeks-column-two-list-container{
+        list-style-type: none;
+        padding: 0 ;
+        margin: 0 0px 0 -150px;
+        li{
+            padding: 5px 0;
+            a{
+                color: #dd4f62;
+                &:hover{
+                    color:#7d2f4d;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.code-block-column-two{
+    .weeks-column-code-block-paragraph{
+        padding: 30px;
+        margin: 0 0px 0 -150px;
+    }
+}

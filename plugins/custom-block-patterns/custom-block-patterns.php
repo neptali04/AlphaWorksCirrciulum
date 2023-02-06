@@ -24,3 +24,5 @@
  define( 'CUSTOM_BLOCK_PATTERNS_VERSION', '1.0.0' );
  
 require_once( 'inc/patterns.php' );
+
+require_once('inc/patterns-two.php');
