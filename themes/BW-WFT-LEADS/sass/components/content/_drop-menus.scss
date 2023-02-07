@@ -1,0 +1,143 @@
+.dropMenusSection{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    flex-wrap: wrap;
+    margin: 5rem 2rem 6rem 2rem;
+    padding: 0;
+    .dropdown {
+        height: 2.5rem;
+        list-style-type: none;
+        padding: 0;
+        margin: 1rem;
+    }
+    .dropdown li {
+        visibility: hidden;
+        position: relative;
+        z-index: 10;
+        margin: 0;
+        padding: 0;
+        background-color: $wf-color_red;
+        border-right: 1px solid $wf-color_red;
+        border-left: 1px solid $wf-color_red;
+        box-shadow: 0px 0px 20px -3px $wf-color_red;
+        transition: 80ms;
+    }
+    .dropdown li a {
+        display: block;
+        width: 10rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        padding: 0rem 1rem;
+        color: $wf-color_white;
+        text-decoration: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: font-size 200ms, background-color 200ms;
+    }
+    .dropdown li a:active {
+        font-size: 0.8em;
+        background-color: rgb(27, 214, 188, 0.1);
+    }
+    .dropdown li:first-of-type {
+        visibility: visible;
+        border-top: 1px solid  $wf-color_red;
+        border-radius: 0.3rem;
+        transition: background-color 200ms;
+    }
+    .dropdown li:last-of-type {
+        border-bottom: 1px solid  $wf-color_red;
+        border-bottom-left-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+    }
+    .dropdown:hover li {
+        visibility: visible;
+    }
+    .dropdown:hover li:first-of-type {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background-color:  $wf-color_red;
+        z-index: 15;
+        font-weight: 600;
+    }
+    .dropdown li:hover {
+        background-color: $wf-color_white !important;
+        z-index: 15;
+    }
+    .dropdown li:hover a {
+        color:  $wf-color_red;
+    }
+}
+
+// .dropMenusSectionRowTwo{
+//     display: flex;
+//     justify-content: center;
+//     height: auto;
+//     flex-wrap: wrap;
+//     margin: 2rem;
+//     padding: 0;
+//     .dropdownTwo {
+//         height: 2.5rem;
+//         list-style-type: none;
+//         padding: 0;
+//         margin: 1rem;
+//     }
+//     .dropdownTwo li {
+//         visibility: hidden;
+//         position: relative;
+//         z-index: 10;
+//         margin: 0;
+//         padding: 0;
+//         background-color:  $wf-color_red;
+//         border-right: 1px solid  $wf-color_red;
+//         border-left: 1px solid  $wf-color_red;
+//         box-shadow: 0px 0px 20px -3px  $wf-color_red;
+//         transition: 80ms;
+//     }
+//     .dropdownTwo li a {
+//         display: block;
+//         width: 10rem;
+//         height: 2.5rem;
+//         line-height: 2.5rem;
+//         padding: 0rem 1rem;
+//         color: $wf-color_white;
+//         text-decoration: none;
+//         white-space: nowrap;
+//         overflow: hidden;
+//         text-overflow: ellipsis;
+//         transition: font-size 200ms, background-color 200ms;
+//     }
+//     .dropdownTwo li a:active {
+//         font-size: 0.8em;
+//         background-color: rgb(27, 214, 188, 0.1);
+//     }
+//     .dropdownTwo li:first-of-type {
+//         visibility: visible;
+//         border-top: 1px solid  $wf-color_red;
+//         border-radius: 0.3rem;
+//         transition: background-color 200ms;
+//     }
+//     .dropdownTwo li:last-of-type {
+//         border-bottom: 1px solid  $wf-color_red;
+//         border-bottom-left-radius: 0.3rem;
+//         border-bottom-right-radius: 0.3rem;
+//     }
+//     .dropdownTwo:hover li {
+//         visibility: visible;
+//     }
+//     .dropdownTwo:hover li:first-of-type {
+//         border-bottom-left-radius: 0;
+//         border-bottom-right-radius: 0;
+//         background-color:  $wf-color_red;
+//         z-index: 15;
+//         font-weight: 600;
+//     }
+//     .dropdownTwo li:hover {
+//         background-color: $wf-color_white !important;
+//         z-index: 15;
+//     }
+//     .dropdownTwo li:hover a {
+//         color:  $wf-color_red;
+//     }
+// }

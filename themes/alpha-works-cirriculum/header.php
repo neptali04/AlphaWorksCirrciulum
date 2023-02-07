@@ -19,7 +19,6 @@
 	<link rel='preload' href='https://static.everyaction.com/ea-actiontag/at.js' as='script' crossorigin='anonymous'>
 	<link rel='preload' href='https://static.everyaction.com/ea-actiontag/at.min.css' as='style'>
 	<script type='text/javascript' src='https://static.everyaction.com/ea-actiontag/at.js' crossorigin='anonymous'></script>
-	<script src="https://kit.fontawesome.com/6b35074062.js" crossorigin="anonymous"></script>
 	<link rel='preload' href='https://nvlupin.blob.core.windows.net/designs/CustomStylesheet_e916c367317ce809fe567bc6f26ffcc07d2f11e7957fa45757713b55e0beb796.css' as='style'>
 
 	<?php wp_head(); ?>
@@ -28,7 +27,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'Kaitlyn-Rochelle' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'bw-impact' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">

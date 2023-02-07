@@ -1,0 +1,44 @@
+.calendarSection{
+    height: 50%;
+    width: auto;
+    background-color:$wf-color_white;
+    .calDatesContain{
+        position: absolute;
+        width: 100%;
+        .calDates{
+            display: flex;
+            justify-content: space-around;
+            .calNum {
+                position: relative;
+                top: -75px;
+                left: -90px;
+                font-size: 55px;
+            }
+        }
+    }
+    .calRow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            
+            font-size: 20rem;
+            position: absolute;
+            z-index: -999;
+        }
+        .calBox{
+            border-right: 0.5px solid #000;
+            border-left: 0.5px solid #000;
+            text-align: center;
+            padding: 30px;
+            .calcopy{
+                display: flex;
+                flex-direction: column;
+                justify-content: right;
+                
+
+            }
+
+        }
+    }
+}

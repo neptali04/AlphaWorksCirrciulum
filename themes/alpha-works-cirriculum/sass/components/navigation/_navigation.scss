@@ -19,7 +19,7 @@
 //   @import url("https://use.typekit.net/hzt8jtg.css");
 //   $brandon-grotesque: brandon-grotesque, sans-serif;
   
-  .site-header {
+.site-header {
 	height: 60px;
 	width: 100%;
 	background-color: #fff;
@@ -35,19 +35,25 @@
 	  width: 175px;
 	  border-radius: 16px;
 	  padding-left: 25px;
-	  img{
-		max-width: 100%;
-	  }
 	}
   }
-  article#post-6 h1 {
-    display: none;
-}
+  
   .main-navigation {
 	display: block;
 	width: 100%;
   
+	.curriculum-dropdown {
+		display: flex;
+		justify-content: center;
+	}
 	// Nav links
+	.sub-menu {
+		display: flex;
+		flex-direction: column;
+		max-width: 150px;
+		text-align: center;
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2) !important;
+	}
 	ul {
 	  display: none;
 	  list-style: none;
@@ -76,7 +82,7 @@
 		}
   
 		a {
-		  width: 200px;
+		  width: 150px;
 		}
   
 		:hover > a,
@@ -106,7 +112,7 @@
 	  display: block;
 	  text-decoration: none;
 	  color: $black;
-	  font-weight: 300;
+	  font-weight: 100;
 	  font-size: 18px;
 	  //text-transform: uppercase;
 	  padding: 14px 14px 8px;
@@ -114,7 +120,7 @@
 	  &:hover {
 		color: $hot-pink;
 	  }
-	  &:active{
+	  &:active {
 		color: $dark-blue;
 	  }
 	}
@@ -257,7 +263,7 @@
 	.main-navigation .toggled ul {
 	  display: block;
 	}
-  
+
   
 	.menu-toggle {
 	  margin-top: 5px;
@@ -303,16 +309,38 @@
 	  }
 	}
   }
+  @media screen and (max-width: 479px) {
+
+	.main-navigation {
+		// Nav links
+		.sub-menu {
+			max-width: 100% !important;
+			box-shadow: 0 -1px 0px rgb(0 0 0 / 20%) !important;
+		}
+	}
   
+  }
+  @media screen and (max-width: 829px) {
+	.curriculum-dropdown {
+		display: unset !important;
+		justify-content: unset !important;
+	}
+	.main-navigation {
+		// Nav links
+		.sub-menu {
+			max-width: 100% !important;
+			box-shadow: 0 -1px 0px rgb(0 0 0 / 20%) !important;
+		}
+	}
+  }
   @media screen and (min-width: 830px) {
 	.site-header {
 	  padding: 0 4%;
 	}
-  
 	.menu-toggle {
 	  display: none;
 	}
-  
+
 	.main-navigation ul {
 	  display: flex;
 	  justify-content: flex-end;
@@ -336,7 +364,7 @@
 	.main-navigation .current_page_item::after {
 	  content: "";
 	  display: inherit;
-	  width: 30px;
+	  width: 50px;
 	  margin: 0 auto;
 	  border-bottom: 5px solid $hot-pink;
 	  border-bottom-width: 5.9px;
@@ -362,5 +390,6 @@
 	  text-align: end;
 	  flex: 1 0 50%;
 	}
-}
+  }
+  
   
